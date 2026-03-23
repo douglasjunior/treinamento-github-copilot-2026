@@ -25,7 +25,42 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 
 ## Projeto Prático do Curso
 
-> A definir — ver seção "Projeto e Tecnologias" ao final deste documento.
+**CRM B2B Simplificado** — aplicação frontend com persistência via Web SQL no browser (sem backend externo).
+
+### Por que esse projeto?
+
+- Todo dev sênior já trabalhou ou vai trabalhar com algo parecido
+- Entidades claras e relacionadas: `Empresa` → `Contato` → `Interação`
+- CNPJ é o identificador central de `Empresa` — uso 100% natural
+- A ausência intencional de validação e máscara de CNPJ cria o problema visível que o módulo 3 resolve
+- Complexidade suficiente para justificar skills, `AGENTS.md` e planos sem distrair do aprendizado
+
+### Funcionalidades da aplicação
+
+- Listagem de empresas (com CNPJ exibido sem máscara — problema visível)
+- Cadastro e edição de empresa (razão social, CNPJ em input comum, segmento, status)
+- Lista de contatos vinculados a uma empresa (nome, cargo, e-mail, telefone)
+- Registro de interações por empresa (tipo: reunião/ligação/e-mail, data, descrição)
+
+### Stack
+
+- **Frontend**: React + TypeScript + Tailwind CSS (gerado via Lovable)
+- **Persistência**: Web SQL / IndexedDB no browser (sem backend)
+- **Skills pré-instaladas**: sobre React, TypeScript e padrões do projeto
+
+### Papel de cada módulo no projeto
+
+| Módulo | O que será feito no projeto |
+|--------|----------------------------|
+| 1 - Skills | Criar skill de implementação de service e skill com algoritmo de validação de CNPJ |
+| 2 - Instruções | Pedir à IA para gerar o `AGENTS.md` do projeto e refiná-lo |
+| 3 - Planos | Criar plano para implementar validação de CNPJ + input com máscara; refinar o plano; autorizar implementação |
+
+### Skills do projeto prático
+
+- [x] Skills pré-instaladas (sobre React, TypeScript, padrões do projeto) — instaladas antes do curso
+- [ ] **Skill: implementar um service** — criada no módulo 1 como demonstração
+- [ ] **Skill: algoritmo de validação de CNPJ** — criada no módulo 1 como demonstração
 
 ---
 
@@ -46,7 +81,8 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 
 **Skills que serão criadas no projeto prático:**
 
-- [ ] A definir junto com o projeto (ex: skill de criação de endpoint, skill de escrita de teste, skill de geração de migration)
+- [ ] Skill: como implementar um service no projeto (padrões, estrutura, onde colocar)
+- [ ] Skill: algoritmo de validação de CNPJ (lógica passo a passo para a IA reproduzir corretamente)
 
 ---
 
@@ -65,7 +101,61 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 
 **Conteúdo do `AGENTS.md` do projeto prático:**
 
-- [ ] A definir junto com o projeto (stack, padrões de código, skills disponíveis, convenções do time)
+- [ ] Gerado pela própria IA a partir do código do projeto usando o prompt abaixo (demonstração ao vivo)
+- [ ] Refinado pelos participantes: stack, padrões de código, skills disponíveis, convenções do time
+
+**Prompt para geração dos `AGENTS.md`:**
+
+> Prompt genérico — funciona em qualquer projeto e qualquer estrutura.
+
+```
+Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGENTS.md em múltiplos níveis do repositório, seguindo as instruções abaixo.
+
+## Regras gerais
+
+- Escaneie toda a estrutura de diretórios e arquivos antes de começar
+- Para cada diretório relevante identificado, avalie se um AGENTS.md agrega valor; crie apenas onde fizer sentido
+- Se um AGENTS.md já existir em algum diretório, leia seu conteúdo, avalie se está desatualizado ou incompleto e o melhore — não o substitua cegamente
+- Escreva de forma direta e objetiva; o leitor é um agente de IA, não um humano
+- Evite redundância entre os arquivos: cada AGENTS.md deve conter apenas o que é relevante para aquele escopo
+- O AGENTS.md raiz deve mencionar explicitamente onde encontrar os demais arquivos AGENTS.md do projeto
+
+## O que cada nível deve conter
+
+### / (raiz do projeto)
+- Descrição do domínio de negócio e propósito da aplicação
+- Stack principal (linguagens, frameworks, bibliotecas relevantes)
+- Como rodar o projeto localmente
+- Convenções gerais de nomenclatura e organização
+- Skills disponíveis no projeto e quando usá-las (se houver arquivo skills.sh ou similar)
+- Mapa dos demais AGENTS.md existentes e o que cada um cobre
+
+### Diretórios de código-fonte (ex: src/, app/, lib/)
+- Visão geral da estrutura interna de pastas e responsabilidade de cada uma
+- Padrões de importação e organização de módulos
+- O que pertence a este nível vs. o que deve ser delegado a subdiretórios
+
+### Diretório de componentes (ex: components/, ui/)
+- Como criar novos componentes: estrutura de arquivo, nomenclatura, onde colocar
+- Padrões de props, estilização e composição
+- Componentes utilitários existentes que devem ser reutilizados
+
+### Diretório de páginas/rotas (ex: pages/, views/, routes/)
+- Como criar novas páginas e registrar rotas
+- Padrão de layout e estrutura esperada de uma página
+- Como conectar páginas a serviços e estado
+
+### Diretório de serviços/lógica de negócio (ex: services/, usecases/, domain/)
+- Como criar um novo service: estrutura, nomenclatura, responsabilidades
+- Padrões de tratamento de erro e retorno
+- Como os services se conectam à camada de persistência
+
+### Outros diretórios relevantes encontrados
+- Analise e documente conforme o contexto (ex: hooks/, store/, utils/, types/, api/)
+
+## Ao finalizar
+Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linha sobre o que cada um cobre.
+```
 
 ---
 
@@ -83,7 +173,8 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 
 **Feature a ser implementada via plano:**
 
-- [ ] A definir junto com o projeto (deve ser complexa o suficiente para justificar o uso de planos)
+- [ ] Validação de CNPJ com algoritmo correto + input com máscara no cadastro de empresas
+  - Etapas: criar service de validação → aplicar skill de algoritmo → criar componente de input com máscara → integrar no formulário → tratar erros de validação
 
 ---
 
@@ -96,31 +187,6 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 - [ ] Atualizar referências e materiais de estudo
 
 ---
-
-## Projeto e Tecnologias
-
-> Pendente de decisão.
-
-**Critérios para escolha do projeto:**
-
-- Familiar para o público (devs seniores e leads)
-- Simples o suficiente para não distrair do aprendizado
-- Complexo o suficiente para justificar o uso de skills, `AGENTS.md` e planos
-- Deve permitir criar pelo menos 2-3 skills relevantes
-- A feature do módulo 3 deve ter múltiplas etapas (ideal para demonstrar planos)
-
-**Opções de stack a considerar:**
-
-- Backend Java (Spring Boot) + testes (JUnit/Mockito) — familiar para a maioria do público DB1
-- Backend Node.js (NestJS) — alternativa mais leve
-- Full stack com Angular no front — aumenta complexidade, mas amplia exemplos
-
-**Decisões pendentes:**
-
-- [ ] Definir o domínio/contexto do projeto (ex: API de gestão de tarefas, sistema de pedidos, etc.)
-- [ ] Definir a stack tecnológica
-- [ ] Definir as skills que serão criadas
-- [ ] Definir a feature do módulo 3
 
 ---
 
