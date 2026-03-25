@@ -180,9 +180,10 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
 
 ## Pendências Técnicas
 
+- [ ] Renomear o `./chapters` para `./chapters-2025` ou similar para manter o histórico do curso anterior
+- [ ] Incluir, após o slide de capa, um slide de introdução sobre GitHub Copilot com diferenças entre os modos Ask, Plan e Agent com exemplos rápidos de cada um (pode ser baseado no conteúdo do curso antigo, mas atualizado e resumido)
 - [ ] Remover slide de intervalo com contador regressivo (`chapters/04-intervalo-contador-regressivo.md`)
 - [ ] Atualizar slide de capa com novo título/repositório
-- [ ] Revisar/atualizar ou remover capítulos antigos que não se encaixam na nova proposta
 - [ ] Criar novos capítulos para cada módulo acima
 - [ ] Atualizar referências e materiais de estudo
 
