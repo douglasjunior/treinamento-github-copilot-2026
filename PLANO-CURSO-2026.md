@@ -180,14 +180,60 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
 
 ## Pendências Técnicas
 
-- [ ] Renomear o `./chapters` para `./chapters-2025` ou similar para manter o histórico do curso anterior
-- [ ] Incluir, após o slide de capa, um slide de introdução sobre GitHub Copilot com diferenças entre os modos Ask, Plan e Agent com exemplos rápidos de cada um (pode ser baseado no conteúdo do curso antigo, mas atualizado e resumido)
-- [ ] Remover slide de intervalo com contador regressivo (`chapters/04-intervalo-contador-regressivo.md`)
-- [ ] Atualizar slide de capa com novo título/repositório
-- [ ] Criar novos capítulos para cada módulo acima
-- [ ] Atualizar referências e materiais de estudo
+1. [x] **Preservar histórico do curso 2025**
+  - Renomear `./chapters` para `./chapters-2025` (ou similar).
+  - Critério de aceite: conteúdo antigo preservado e acessível para consulta/reuso.
+  - Status: concluído em 2026-03-25 (`./chapters` -> `./chapters-2025`).
+
+2. [x] **Criar a base do novo deck 2026**
+  - Criar nova pasta `./chapters` para os capítulos 2026.
+  - Atualizar `slides.md` com novo título/repositório e apontamento para os novos capítulos.
+  - Critério de aceite: deck abre com capa 2026 e sem dependência do conteúdo antigo.
+  - Status: concluído em 2026-03-26. Pasta `./chapters` criada vazia. Imports antigos comentados em `slides.md` e preparados para receber os novos capítulos 2026.
+
+3. [x] **Inserir o slide de introdução após a capa**
+  - Criar novo arquivo `chapters/01-introducao-ask-plan-agent.md` com slide de diferenças entre Ask, Plan e Agent.
+  - Ativar import deste capítulo em `slides.md` descomentando a linha correspondente.
+  - Incluir exemplos rápidos de quando usar cada modo.
+  - Critério de aceite: slide de introdução aparece imediatamente após a capa no fluxo da apresentação.
+  - Status: concluído em 2026-03-26. Arquivo criado e import ativado em slides.md.
+
+4. [ ] **Construir capítulo do Módulo 1 (Skills)**
+  - Criar slides do módulo focando em criação, reuso e compartilhamento de skills.
+  - Incluir demonstração das 2 skills do projeto prático (service e validação de CNPJ).
+  - Critério de aceite: módulo completo e executável no workshop sem depender dos módulos 2 e 3.
+
+5. [ ] **Construir capítulo do Módulo 2 (Instruções)**
+  - Criar slides do módulo focando em `AGENTS.md` e `.github/copilot-instructions.md`.
+  - Incluir demonstração de geração e refinamento do `AGENTS.md` do projeto prático.
+  - Critério de aceite: módulo completo com roteiro claro de escrita e revisão de instruções.
+
+6. [ ] **Construir capítulo do Módulo 3 (Planos)**
+  - Criar slides do módulo focando em criação/refino/execução de planos.
+  - Usar como caso principal a feature de validação e máscara de CNPJ.
+  - Critério de aceite: módulo completo com fluxo fim a fim do plano até a implementação.
+
+7. [ ] **Remover conteúdo que não se encaixa na proposta 2026**
+  - Excluir/omitir o slide de intervalo com contador regressivo (`chapters/04-intervalo-contador-regressivo.md`).
+  - Revisar sobras de capítulos antigos que não forem reaproveitados.
+  - Critério de aceite: deck final sem quebras de ritmo e sem seções fora do novo objetivo.
+
+8. [ ] **Fechar materiais de apoio**
+  - Atualizar referências e materiais de estudo para 2026.
+  - Critério de aceite: links e materiais alinhados com os tópicos e ferramentas do novo curso.
 
 ---
+
+## Execução Incremental (Slide a Slide)
+
+Para reduzir risco e manter qualidade, a migração 2026 será feita em ciclos curtos:
+
+1. Definir objetivo do slide.
+2. Definir conteúdo exato do slide.
+3. Definir prática/exercício associado no curso.
+4. Validar aderência ao padrão visual e estrutural do curso 2025.
+5. Só então avançar para o próximo slide.
+
 
 ---
 
@@ -197,3 +243,5 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
 - Priorizar exemplos práticos e exercícios hands-on
 - Foco em ganhos de produtividade mensuráveis (tokens economizados, tempo de implementação, consistência de padrões)
 - O projeto prático deve ser o mesmo do início ao fim — isso reforça a narrativa de evolução do setup
+- Atualize o AGENTS.md sempre que os slides mudarem
+- Mantenha esse plano atualizado e referencie-o durante a construção dos slides para garantir alinhamento com os objetivos do curso

@@ -1,7 +1,7 @@
 ---
 theme: dracula
 background: ./mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg
-title: Dominando o GitHub Copilot - Workshop Prático
+title: Dominando o GitHub Copilot 2026 - Workshop Prático
 layout: cover
 transition: slide-left
 lineNumbers: true
@@ -33,43 +33,28 @@ h2 {
 }
 </style>
 
-# Dominando o GitHub Copilot
+# Dominando o GitHub Copilot 2026
 
-Workshop Prático para Desenvolvedores
+Workshop prático sobre trabalho com agentes de código
 
 **Por**: Douglas Nassif (douglas.junior@db1.com.br)
-
-**Repositório**: https://github.com/douglasjunior/github-copilot-workshop-2025
-
----
-src: ./chapters/01-introducao-ao-copilot-o-que-e-como-funciona-e-beneficios.md
----
+<!-- TODO: adicionar links dos repositórios quando forem criados -->
+**Repositório**: https://github.com/douglasjunior/github-copilot-workshop-2026
 
 ---
-src: ./chapters/02-autocomplete-vscode-intellij-exemplos-java-angular-e-dicas.md
+src: ./chapters/01-introducao-ask-plan-agent.md
 ---
 
 ---
-src: ./chapters/03-modo-ask-prompts-exemplos-java-angular-e-casos-de-uso.md
+src: ./chapters/01a-cenarios-agentes.md
 ---
 
----
-src: ./chapters/04-intervalo-contador-regressivo.md
----
+<!-- Slide 4+: Módulo 1 (Skills) -->
+<!-- src: ./chapters/02-modulo-1-skills.md -->
 
----
-src: ./chapters/05-modo-agent-diferencas-refatoracao-e-melhores-praticas.md
----
+<!-- Slide 5+: Módulo 3 (Planos) -->
+<!-- src: ./chapters/04-modulo-3-planos.md -->
 
----
-src: ./chapters/06-personalizacao-prompts-personalizados-e-instrucoes-do-repositorio.md
----
-
----
-src: ./chapters/07-codigo-legado-exemplos-de-prompts-e-boas-praticas-gerais.md
----
-
----
-src: ./chapters/08-referencias-e-materiais-de-estudo.md
----
+<!-- Slide 6+: Referências -->
+<!-- src: ./chapters/05-referencias.md -->
 
