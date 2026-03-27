@@ -5,10 +5,10 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export --wait-until networkidle"
   },
   "dependencies": {
-    "@slidev/cli": "^52.0.0",
+    "@slidev/cli": "^52.14.1",
     "@slidev/theme-default": "^0.25.0",
     "slidev-theme-dracula": "^0.2.0"
   },

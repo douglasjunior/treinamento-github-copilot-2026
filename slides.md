@@ -4,7 +4,6 @@ background: ./mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg
 title: Dominando o GitHub Copilot 2026 - Workshop Prático
 layout: cover
 transition: slide-left
-lineNumbers: true
 mdc: true
 selectable: true
 ---
