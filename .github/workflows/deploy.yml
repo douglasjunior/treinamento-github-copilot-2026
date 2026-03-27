@@ -3,7 +3,7 @@ name: Deploy pages
 on:
   workflow_dispatch:
   push:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: read
@@ -28,29 +28,29 @@ jobs:
       - name: Cache node_modules
         uses: actions/cache@v4
         with:
-          path: slides/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('slides/yarn.lock') }}
+          path: ./node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('./yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Setup yarn
         run: npm i -g yarn
-        working-directory: slides
+        working-directory: .
 
       - name: Install dependencies
         run: yarn install
-        working-directory: slides
+        working-directory: .
 
       - name: Build
         run: yarn build --base /${{github.event.repository.name}}/
-        working-directory: slides
+        working-directory: .
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: slides/dist
+          path: ./dist
 
   deploy:
     environment:

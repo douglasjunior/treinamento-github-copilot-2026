@@ -15,14 +15,12 @@ O arquivo principal é `slides.md`. Ele contém apenas o slide de capa e importa
 | Arquivo | Slides | Conteúdo resumido |
 |---|---|---|
 | `slides.md` | Capa | Slide de abertura do workshop com título, autor e repositório. |
-| `chapters/01-introducao-ao-copilot-o-que-e-como-funciona-e-beneficios.md` | 3 | O que é o GitHub Copilot, como funciona (ML + contexto) e benefícios práticos para desenvolvedores com demo rápida. |
-| `chapters/02-autocomplete-vscode-intellij-exemplos-java-angular-e-dicas.md` | 5 | Introdução ao autocomplete, uso no VSCode e IntelliJ, exemplos práticos em Java (endpoint REST) e Angular (componente), além de dicas e limitações. |
-| `chapters/03-modo-ask-prompts-exemplos-java-angular-e-casos-de-uso.md` | 8 | Modo Ask: como fazer perguntas em linguagem natural, criação de prompts eficazes, exemplos em Java (validação de email) e Angular (serviço + consumo no componente), e casos de uso comuns. |
-| `chapters/04-intervalo-contador-regressivo.md` | 1 | Slide de intervalo com contador regressivo de 5 minutos interativo (Vue + script setup). |
-| `chapters/05-modo-agent-diferencas-refatoracao-e-melhores-praticas.md` | 6 | Modo Agent: conceito, diferenças em relação ao Autocomplete e Modo Ask, exemplo completo de refatoração de código ruim para código limpo (Java e TypeScript), e melhores práticas. |
-| `chapters/06-personalizacao-prompts-personalizados-e-instrucoes-do-repositorio.md` | 3 | Personalização do Copilot: criação de prompt files (`.github/prompts/*.prompt.md`) e instruções personalizadas de repositório (`.github/copilot-instructions.md`). |
-| `chapters/07-codigo-legado-exemplos-de-prompts-e-boas-praticas-gerais.md` | 3 | Uso do Modo Agent em código legado com prompts de explicação, refatoração e geração de testes, seguido de boas práticas gerais de uso responsável da IA. |
-| `chapters/08-referencias-e-materiais-de-estudo.md` | 1 | Links para documentação oficial do GitHub Copilot (VSCode, JetBrains, Chat), playlist no YouTube e curso interno Uni421. |
+| `chapters/01-introducao-ask-plan-agent.md` | 1 | Introdução aos modos Ask, Plan e Agent com diferenças de uso. |
+| `chapters/01a-cenarios-agentes.md` | 1 | Cenários de aplicação de agentes com revelação progressiva. |
+| `chapters/02-modulo-1-skills.md` | 10+ | Módulo 1: conceito de skills, estrutura, uso no Copilot, prompting, reuso e demo de skill CNPJ. |
+| `chapters/03-modulo-2-instrucoes.md` | 7+ | Módulo 2: AGENTS.md, benefícios, seções, boas práticas e demo de geração com prompt completo. |
+| `chapters/04-modulo-3-planos.md` | 7+ | Módulo 3: modo Plan, vantagens, cenários, criação e refinamento de plano para a feature de CNPJ. |
+| `chapters/05-referencias.md` | 1 | Referências oficiais e materiais de apoio para continuidade após o workshop. |
 
 ---
 

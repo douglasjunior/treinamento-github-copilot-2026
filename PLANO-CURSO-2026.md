@@ -182,7 +182,7 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
 1. [x] **Preservar histórico do curso 2025**
   - Renomear `./chapters` para `./chapters-2025` (ou similar).
   - Critério de aceite: conteúdo antigo preservado e acessível para consulta/reuso.
-  - Status: concluído em 2026-03-25 (`./chapters` -> `./chapters-2025`).
+  - Status: concluído em 2026-03-25 (`./chapters` -> `./chapters-2025`) para apoiar a migração; legado removido após fechamento do deck 2026 em 2026-03-27.
 
 2. [x] **Criar a base do novo deck 2026**
   - Criar nova pasta `./chapters` para os capítulos 2026.
@@ -215,14 +215,16 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
   - Critério de aceite: módulo completo com fluxo fim a fim do plano até a implementação.
   - Status: concluído em 2026-03-27. Capítulo `chapters/04-modulo-3-planos.md` criado e importado em `slides.md`, com foco em definição do modo Plan, vantagens, cenário de aplicação e demonstração de criação/refino do plano para a feature de CNPJ (input mascarado em `src/components`, validação no form e exibição mascarada em todas as telas).
 
-7. [ ] **Remover conteúdo que não se encaixa na proposta 2026**
+7. [x] **Remover conteúdo que não se encaixa na proposta 2026**
   - Excluir/omitir o slide de intervalo com contador regressivo (`chapters/04-intervalo-contador-regressivo.md`).
   - Revisar sobras de capítulos antigos que não forem reaproveitados.
   - Critério de aceite: deck final sem quebras de ritmo e sem seções fora do novo objetivo.
+  - Status: concluído em 2026-03-27. Fluxo ativo em `slides.md` mantém apenas capítulos 2026 (`01`, `01a`, `02`, `03`, `04`, `05`), sem intervalo e sem sobras do conteúdo antigo.
 
-8. [ ] **Fechar materiais de apoio**
+8. [x] **Fechar materiais de apoio**
   - Atualizar referências e materiais de estudo para 2026.
   - Critério de aceite: links e materiais alinhados com os tópicos e ferramentas do novo curso.
+  - Status: concluído em 2026-03-27. Capítulo `chapters/05-referencias.md` criado e importado antes do slide `FIM`, com documentação oficial de Copilot, agentes, planejamento, AGENTS.md e skills.
 
 ---
 

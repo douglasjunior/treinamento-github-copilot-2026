@@ -74,8 +74,9 @@ src: ./chapters/03-modulo-2-instrucoes.md
 src: ./chapters/04-modulo-3-planos.md
 ---
 
-<!-- Slide 6+: Referências -->
-<!-- src: ./chapters/05-referencias.md -->
+---
+src: ./chapters/05-referencias.md
+---
 
 ---
 layout: end
