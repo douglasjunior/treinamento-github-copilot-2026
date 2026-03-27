@@ -67,12 +67,6 @@ Blocos `<style>` dentro de um slide aplicam estilos com escopo local (apenas àq
 </style>
 ```
 
-### Classe `.btn-default`
-Definida globalmente em `slides.md`. Use em botões interativos:
-```html
-<button class="btn-default" @click="handler">Label</button>
-```
-
 ### Animações com cliques
 - `<v-click>` — exibe o conteúdo no próximo clique.
 - `<v-clicks>` — exibe cada item filho em cliques sucessivos.
