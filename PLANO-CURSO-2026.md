@@ -198,10 +198,11 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
   - Critério de aceite: slide de introdução aparece imediatamente após a capa no fluxo da apresentação.
   - Status: concluído em 2026-03-26. Arquivo criado e import ativado em slides.md.
 
-4. [ ] **Construir capítulo do Módulo 1 (Skills)**
+4. [x] **Construir capítulo do Módulo 1 (Skills)**
   - Criar slides do módulo focando em criação, reuso e compartilhamento de skills.
   - Incluir demonstração das 2 skills do projeto prático (service e validação de CNPJ).
   - Critério de aceite: módulo completo e executável no workshop sem depender dos módulos 2 e 3.
+  - Status: concluído em 2026-03-26. Capítulo `chapters/02-modulo-1-skills.md` finalizado com fluxo completo (estrutura, uso, prompting, reuso, demo de skill CNPJ e exercício final).
 
 5. [ ] **Construir capítulo do Módulo 2 (Instruções)**
   - Criar slides do módulo focando em `AGENTS.md` e `.github/copilot-instructions.md`.
