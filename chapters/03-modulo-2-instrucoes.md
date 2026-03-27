@@ -231,103 +231,62 @@ Coloque um `AGENTS.md` dentro de cada pacote. O agente lê o mais próximo na á
 
 ---
 
-## Demonstração: Gerando o AGENTS.md com Agent
+## Gerando o AGENTS.md para nosso projeto
 
-**Prompt base da demonstração**
+**Vamos usar o agente para criar os arquivos AGENTS.md**
 
-```md
-Analise este repositório e crie um AGENTS.md na raiz.
-
-Objetivo:
-- refletir a arquitetura real do projeto
-- documentar convenções técnicas de implementação
-- listar skills disponíveis e quando usar
-- incluir checklist de qualidade antes de encerrar tarefas
-
-Escreva de forma direta para um agente de código.
-```
-
-<v-click>
-
-**Passos Práticos**
-
-1. Abrir o chat no modo Agent dentro do projeto.
-2. Executar o prompt acima sem detalhar a estrutura manualmente.
+1. Abrir o chat no modo `Agent` dentro do projeto e selecionar o modelo `Auto`
+2. Executar o prompt abaixo sem detalhar a estrutura manualmente, deixe o agente descobrir.
 3. Revisar se o resultado bate com pastas reais e padrão do time.
-4. Salvar AGENTS.md e commitar junto do módulo.
 
-</v-click>
-
----
-
-## Refinamento do AGENTS.md (Checklist)
-
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 1 }" class="dynamic-section">
-
-**Primeira revisão**
-
-- O documento descreve as pastas corretas?
-- Fala dos tipos e de onde vem os dados?
-- Explica como criar service no padrão do projeto?
-- Menciona skills e critério de uso?
-
-</div>
-
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 1 }" class="dynamic-section">
-
-**Segunda revisão (qualidade)**
-
-- Tem regras objetivas e acionáveis?
-- Evita texto genérico e redundante?
-- Inclui checklist de validação final?
-- Está claro para quem nunca viu o projeto?
-
-**Meta**: AGENTS.md curto, útil e operacional.
-
-</div>
-
----
-
-## Exemplo: copilot-instructions.md
-
-Arquivo: `.github/copilot-instructions.md`
+<div style="transform: scale(0.35); transform-origin: top left; width: 1300px;">
 
 ```md
----
-applyTo: '**'
----
+Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGENTS.md em múltiplos níveis do repositório, seguindo as instruções abaixo.
 
-- Responda em portugues brasileiro.
-- Responda em português brasileiro.
-- Priorize exemplos em TypeScript.
-- Em alterações de código, preserve padrões do projeto.
-- Antes de concluir, verifique erros de lint/build quando possível.
+## Regras gerais
+
+- Escaneie toda a estrutura de diretórios e arquivos antes de começar
+- Para cada diretório relevante identificado, avalie se um AGENTS.md agrega valor; crie apenas onde fizer sentido
+- Se um AGENTS.md já existir em algum diretório, leia seu conteúdo, avalie se está desatualizado ou incompleto e o melhore — não o substitua cegamente
+- Escreva de forma direta e objetiva; o leitor é um agente de IA, não um humano
+- Evite redundância entre os arquivos: cada AGENTS.md deve conter apenas o que é relevante para aquele escopo
+- O AGENTS.md raiz deve mencionar explicitamente onde encontrar os demais arquivos AGENTS.md do projeto
+
+## O que cada nível deve conter
+
+### / (raiz do projeto)
+- Descrição do domínio de negócio e propósito da aplicação
+- Stack principal (linguagens, frameworks, bibliotecas relevantes)
+- Como rodar o projeto localmente
+- Convenções gerais de nomenclatura e organização
+- Skills disponíveis no projeto e quando usá-las: **não documentar no AGENTS.md — o agente descobre skills automaticamente**
+
+### Diretórios de código-fonte (ex: src/, app/, lib/)
+- Visão geral da estrutura interna de pastas e responsabilidade de cada uma
+- Padrões de importação e organização de módulos
+- O que pertence a este nível vs. o que deve ser delegado a subdiretórios
+
+### Diretório de componentes (ex: components/, ui/)
+- Como criar novos componentes: estrutura de arquivo, nomenclatura, onde colocar
+- Padrões de props, estilização e composição
+- Componentes utilitários existentes que devem ser reutilizados
+
+### Diretório de páginas/rotas (ex: pages/, views/, routes/)
+- Como criar novas páginas e registrar rotas
+- Padrão de layout e estrutura esperada de uma página
+- Como conectar páginas a serviços e estado
+
+### Diretório de serviços/lógica de negócio (ex: services/, usecases/, domain/)
+- Como criar um novo service: estrutura, nomenclatura, responsabilidades
+- Padrões de tratamento de erro e retorno
+- Como os services se conectam à camada de persistência
+
+### Outros diretórios relevantes encontrados
+- Analise e documente conforme o contexto (ex: hooks/, store/, utils/, types/, api/)
+
+## Ao finalizar
+Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linha sobre o que cada um cobre.
 ```
 
-<v-click>
-
-**Passos Práticos**
-
-1. Criar o arquivo .github/copilot-instructions.md.
-2. Definir 4-6 regras curtas e objetivas.
-3. Validar com um prompt simples se as regras foram aplicadas.
-
-</v-click>
-
----
-
-## Exercício Final do Módulo 2
-
-Objetivo: sair com instruções do projeto prontas para suportar o módulo 3.
-
-**Entregáveis**
-- AGENTS.md inicial gerado e refinado
-- .github/copilot-instructions.md com regras objetivas
-
-**Critérios de aceite**
-- [ ] AGENTS.md com contexto, convenções e skills
-- [ ] Regras acionáveis para services e componentes
-- [ ] Checklist de qualidade no fim do AGENTS.md
-- [ ] Instruções de resposta no copilot-instructions.md
-
-**Conexão com o Módulo 3**: essas instruções serão a base para criar e executar planos com menos retrabalho.
+</div>

@@ -128,7 +128,6 @@ Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGE
 - Como rodar o projeto localmente
 - Convenções gerais de nomenclatura e organização
 - Skills disponíveis no projeto e quando usá-las: **não documentar no AGENTS.md — o agente descobre skills automaticamente**
-- Mapa dos demais AGENTS.md existentes e o que cada um cobre
 
 ### Diretórios de código-fonte (ex: src/, app/, lib/)
 - Visão geral da estrutura interna de pastas e responsabilidade de cada uma
@@ -204,10 +203,11 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
   - Critério de aceite: módulo completo e executável no workshop sem depender dos módulos 2 e 3.
   - Status: concluído em 2026-03-26. Capítulo `chapters/02-modulo-1-skills.md` finalizado com fluxo completo (estrutura, uso, prompting, reuso, demo de skill CNPJ e exercício final).
 
-5. [ ] **Construir capítulo do Módulo 2 (Instruções)**
+5. [x] **Construir capítulo do Módulo 2 (Instruções)**
   - Criar slides do módulo focando em `AGENTS.md` e `.github/copilot-instructions.md`.
   - Incluir demonstração de geração e refinamento do `AGENTS.md` do projeto prático.
   - Critério de aceite: módulo completo com roteiro claro de escrita e revisão de instruções.
+  - Status: concluído em 2026-03-26. Capítulo `chapters/03-modulo-2-instrucoes.md` finalizado com fluxo completo até a criação dos arquivos `AGENTS.md` (o que são, por que usar, seções, como usar, boas práticas e demo com prompt completo).
 
 6. [ ] **Construir capítulo do Módulo 3 (Planos)**
   - Criar slides do módulo focando em criação/refino/execução de planos.
