@@ -30,6 +30,15 @@ Workshop prático sobre trabalho avançado com agentes de código
 **Projeto de Referência**: https://github.com/db1group/prospect-nest-app
 
 ---
+
+# Agenda do Curso
+
+1. **Introdução e nivelamento**
+1. **Skills**
+1. **Instruções de Agents**
+1. **Planos**
+
+---
 src: ./chapters/01-introducao-ask-plan-agent.md
 ---
 
