@@ -2,6 +2,11 @@ h2 {
   margin-bottom: 0.8em;
 }
 
+.footer {
+  pointer-events: none;
+  user-select: none;
+}
+
 .dynamic-section {
   transition: all 0.3s ease;
   margin: 0;
@@ -12,6 +17,7 @@ h2 {
 .dynamic-hidden {
   opacity: 0;
   pointer-events: none;
+  user-select: none;
   height: 0;
   margin: 0;
   padding: 0;
@@ -38,4 +44,5 @@ h2 {
   width: 180px;
   max-width: 18vw;
   pointer-events: none;
+  user-select: none;
 }

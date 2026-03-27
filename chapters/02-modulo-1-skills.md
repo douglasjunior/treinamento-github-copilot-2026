@@ -155,7 +155,7 @@ Arquivo: `.agents/skills/typescript-service/SKILL.md`
 
 <div style="transform: scale(0.34); transform-origin: top left; width: 1024px;">
 
-````markdown
+```markdown
 ---
 name: typescript-service
 description: Criar services TypeScript funcionais para encapsular acesso externos a aplicação, como chamadas HTTP e IndexedDB.
@@ -176,7 +176,7 @@ Um service é um módulo TypeScript com funções que encapsulam acesso externo,
 
 ## Estrutura
 
-```ts
+<pre>
 export async function listCompanies(): Promise<Company[]> {
   // implementação
 }
@@ -195,7 +195,7 @@ export async function updateCompany(
 ): Promise<Company> {
   // implementação
 }
-```
+</pre>
 
 ## Regras
 - Preferir funções exportadas em vez de classes
@@ -206,7 +206,8 @@ export async function updateCompany(
 
 ## Exemplo Completo
 Arquivo: src/services/companyService.ts
-````
+
+```
 
 </div>
 
