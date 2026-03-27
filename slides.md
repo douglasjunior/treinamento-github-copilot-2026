@@ -46,13 +46,19 @@ h2 {
 }
 </style>
 
-# Dominando o GitHub Copilot 2026
+<h1>
+Treinamento avançado de
+<br />
+Github Copilot - 2026
+</h1>
 
-Workshop prático sobre trabalho com agentes de código
+Workshop prático sobre trabalho avançado com agentes de código
 
-**Por**: Douglas Nassif (douglas.junior@db1.com.br)
-<!-- TODO: adicionar links dos repositórios quando forem criados -->
-**Repositório**: https://github.com/douglasjunior/github-copilot-workshop-2026
+**Por**: Time de Engenharia da DB1 Global Software
+- Roberto Padilha - roberto.padilha@db1.com.br
+- Douglas Nassif - douglas.junior@db1.com.br
+
+**Projeto de Referência**: https://github.com/db1group/prospect-nest-app
 
 ---
 src: ./chapters/01-introducao-ask-plan-agent.md
