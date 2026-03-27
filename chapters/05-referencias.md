@@ -3,9 +3,7 @@
 ### Documentação oficial
 
 - [Documentação do GitHub Copilot](https://docs.github.com/pt/copilot)
-- [Copilot Chat no VS Code](https://code.visualstudio.com/docs/copilot/chat/copilot-chat)
-- [Uso de agentes no VS Code](https://code.visualstudio.com/docs/copilot/agents/overview)
-- [Planejamento com agentes no VS Code](https://code.visualstudio.com/docs/copilot/agents/planning)
+- [Início rápido do GitHub Copilot](https://docs.github.com/copilot/get-started/quickstart)
 - [Configurar instruções personalizadas no Copilot](https://docs.github.com/pt/copilot/how-tos/configure-custom-instructions)
 
 <br />
