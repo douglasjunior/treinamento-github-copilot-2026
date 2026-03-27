@@ -44,7 +44,7 @@ Sem instruções o agente tende a improvisar, **realizando repetitivos escaneame
 
 ## Por que Usar Instruções?
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 4 }" class="dynamic-section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 6 }" class="dynamic-section">
 
 **Economize contexto e tempo**
 
@@ -57,18 +57,20 @@ Sem instruções o agente tende a improvisar, **realizando repetitivos escaneame
 - Instruções específicas funcionam melhor: *"use 2 espaços de indentação"* supera *"formate bem o código"*
 - Menos variação entre sessões e entre diferentes agentes do mesmo time
 
-</v-clicks>
-
-</div>
-
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 4 }" class="dynamic-section">
-
-<v-clicks>
-
 **Escale para o time**
 
 - `AGENTS.md` é suportado por Copilot, Claude, Gemini CLI, JetBrains Junie, Warp, entre outros
 - Uma instrução única que qualquer agente do time usa, mantida junto ao código
+
+</v-clicks>
+
+</div>
+
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 6 }" class="dynamic-section">
+
+<v-clicks>
+
+
 
 **Acelere o onboarding**
 
