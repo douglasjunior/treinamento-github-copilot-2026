@@ -31,7 +31,7 @@ Workshop prático sobre trabalho avançado com agentes de código
 
 ---
 
-# Agenda do Curso
+# Agenda do Treinamento
 
 1. **Introdução e nivelamento**
 1. **Skills**
