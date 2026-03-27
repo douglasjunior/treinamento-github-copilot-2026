@@ -10,10 +10,11 @@ layout: center
 
 <div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 1 }" class="dynamic-section">
 
-Instruções de repositório são arquivos versionados que orientam como o agente deve atuar dentro daquele projeto.
+**Instruções de repositório** são arquivos versionados que orientam como o Agente deve atuar dentro daquele projeto.
 
 - Explicam contexto técnico e de negócio
 - Definem convenções e limites
+- Apontam para documentação relevante
 - Reduzem respostas genéricas
 - Melhoram consistência entre sessões
 
@@ -169,7 +170,7 @@ Visão geral do projeto, comandos de build e teste, convenções de código, ins
 
 **3. Adicione instruções extras**
 
-Mensagens de commit, PR guidelines, passos de deploy — tudo que você diria a um novo colega de time.
+Mensagens de commit, PR guidelines e passos de deploy. Tudo que você diria a um novo colega de time.
 
 </div>
 
@@ -177,7 +178,7 @@ Mensagens de commit, PR guidelines, passos de deploy — tudo que você diria a 
 
 **4. Monorepo? Projeto grande? Use arquivos aninhados**
 
-Coloque um `AGENTS.md` dentro de cada pacote. O agente lê o mais próximo na árvore.
+Coloque um `AGENTS.md` dentro de cada pacote ou subprojeto. O agente lê o mais próximo na árvore.
 
 > Por exemplo, atualmente o repositório principal do OpenAI tem 88 arquivos `AGENTS.md`.
 
@@ -225,7 +226,7 @@ Coloque um `AGENTS.md` dentro de cada pacote. O agente lê o mais próximo na á
 **Conflito de instruções**
 
 - Caso utilize múltiplos `AGENTS.md`, o arquivo mais próximo do arquivo editado vence
-- Prompt explícito do usuário pode sobrepor instruções, mas pode gerar respostas inconsistentes
+- Prompt explícito do usuário pode sobrepor instruções e gerar respostas inconsistentes
 
 </v-clicks>
 
@@ -240,7 +241,7 @@ Coloque um `AGENTS.md` dentro de cada pacote. O agente lê o mais próximo na á
 <v-clicks>
 
 1. Abrir o chat no modo `Agent` dentro do projeto e selecionar o modelo `Auto`
-2. Executar o prompt abaixo sem detalhar a estrutura manualmente, deixe o agente descobrir.
+2. Executar o prompt a seguir sem detalhar a estrutura manualmente, deixe o agente descobrir.
 3. Revisar se o resultado bate com pastas reais e padrão do time.
 
 <div style="transform: scale(0.35); transform-origin: top left; width: 1300px;">

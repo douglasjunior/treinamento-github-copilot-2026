@@ -46,3 +46,32 @@ h2 {
   pointer-events: none;
   user-select: none;
 }
+
+.shine {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #7d5a00 0%,
+    #c8960c 20%,
+    #ffd700 35%,
+    #fff5a0 47%,
+    #ffffff 50%,
+    #fff5a0 53%,
+    #ffd700 65%,
+    #c8960c 80%,
+    #7d5a00 100%
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)) drop-shadow(0 0 18px rgba(255, 215, 0, 0.35));
+  animation: shine-sweep 4s linear infinite;
+}
+
+@keyframes shine-sweep {
+  0%    { background-position: 100% center; }
+  25%   { background-position: -100% center; animation-timing-function: step-end; }
+  25.1% { background-position: 100% center; }
+  100%  { background-position: 100% center; }
+}

@@ -19,7 +19,7 @@ O modo **Plano** é um agente focado em criar um plano de implementação estrut
 
 ---
 
-## Por que usar Plan antes de codar?
+## Por que usar Plano antes de Implementar?
 
 <div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 4 }" class="dynamic-section">
 
@@ -48,7 +48,7 @@ O modo **Plano** é um agente focado em criar um plano de implementação estrut
 
 **Melhor previsibilidade**
 - Time consegue revisar escopo antes de implementar
-- Facilita handoff para execução com mais segurança
+- Facilita *handoff* para execução com mais segurança
 
 </v-clicks>
 
@@ -66,6 +66,7 @@ O modo **Plano** é um agente focado em criar um plano de implementação estrut
 - Refatorações com risco de regressão
 - Demandas com critérios de aceite detalhados
 - Tarefas com dependências entre etapas
+- Você não tem certeza de onde ou como começar
 
 **Evite Plano quando**
 
@@ -150,6 +151,6 @@ O plano deve conter:
 2. Executar o prompt do slide anterior.
 3. Responder perguntas de esclarecimento do agente.
 4. Refinar o plano até ficar objetivo, sequencial e verificável.
-5. Só depois aprovar handoff para implementação.
+5. Só depois aprovar *handoff* para implementação.
 
 </v-clicks>

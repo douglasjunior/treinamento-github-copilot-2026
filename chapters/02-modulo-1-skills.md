@@ -304,7 +304,7 @@ Ferramentas como [skills.sh](https://skills.sh) também ajudam a descobrir e ins
 
 ## Criando a Skill de CNPJ
 
-Usando o que aprendemos, vamos criar uma skill para validar e aplicar máscara de CNPJ.
+Usando o que aprendemos, vamos criar uma skill para validar e aplicar máscara de CNPJ alfanumérico.
 
 **A skill deve conter**
 
@@ -316,7 +316,7 @@ Usando o que aprendemos, vamos criar uma skill para validar e aplicar máscara d
 **Sugestões**
 
 1. Crie a skill em `.agents/skills/cnpj-alfanumerico/SKILL.md` que contenha.
-2. Adicione o frontmatter com `name` e `description` claros.
+2. Adicione o *frontmatter* (metadados) com `name` e `description` claros.
     - `name`: cnpj-alfanumerico
     - `description`: Regra de negócio para o algoritmo de validação e máscara de CNPJ alfanumérico
 3. No conteúdo, inclua a regra de negócio disponibilizada.
