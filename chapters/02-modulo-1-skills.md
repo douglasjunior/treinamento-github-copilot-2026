@@ -119,8 +119,8 @@ Use quando precisar criar um novo service que:
 
 **Descoberta**
 
-1. Você cria a skill em `./.agents/skills/skill-nome/SKILL.md` com `name` e `description`
-2. O agente **autodescobre** as skills na pasta `./.agents/skills/` ao iniciar
+1. Você cria a skill em `.agents/skills/skill-nome/SKILL.md` com `name` e `description`
+2. O agente **autodescobre** as skills na pasta `.agents/skills/` ao iniciar
 3. Quando a tarefa combina com o `description`, o agente ativa a skill automaticamente
 4. Você pede ao Copilot Agent:
     > "Crie um novo service chamado `ContactService`"
@@ -148,7 +148,7 @@ Sem skill, Copilot gera variações inconsistentes; com skill, gera sempre igual
 
 ## Exemplo Básico: Skill de Service
 
-Arquivo: `./.agents/skills/typescript-service/SKILL.md`
+Arquivo: `.agents/skills/typescript-service/SKILL.md`
 
 - Skill em formato oficial (`SKILL.md`)
 - Regras que o Agent deve seguir em toda geração
@@ -305,10 +305,17 @@ Ferramentas como [skills.sh](https://skills.sh) também ajudam a descobrir e ins
 
 Usando o que aprendemos, vamos criar uma skill para validar e aplicar máscara de CNPJ.
 
-A skill deve conter:
+**A skill deve conter**
 
 - Validação de CNPJ
 - Máscara de CNPJ
 
 > Baixe a regra de negócio [aqui](https://gist.githubusercontent.com/douglasjunior/6f4fc75d32330709afcb9dc7c4cb3296/raw/0139e41a3390f9fb917867f7ca7dcd35c1806c37/cnpj-alfanumerico.md).
 
+**Sugestões**
+
+1. Crie a skill em `.agents/skills/cnpj-alfanumerico/SKILL.md` que contenha.
+2. Adicione o frontmatter com `name` e `description` claros.
+    - `name`: cnpj-alfanumerico
+    - `description`: Regra de negócio para o algoritmo de validação e máscara de CNPJ alfanumérico
+3. No conteúdo, inclua a regra de negócio disponibilizada.

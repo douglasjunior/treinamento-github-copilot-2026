@@ -6,9 +6,9 @@ layout: center
 
 ---
 
-## O que é o modo Plan?
+## O que é o modo Plano?
 
-O **Plan** é um agente focado em criar um plano de implementação estruturado **antes de escrever código**.
+O modo **Plano** é um agente focado em criar um plano de implementação estruturado **antes de escrever código**.
 
 - Quebra uma tarefa complexa em etapas menores
 - Faz perguntas de esclarecimento quando faltar contexto
@@ -104,25 +104,27 @@ O **Plan** é um agente focado em criar um plano de implementação estruturado 
 
 <v-clicks>
 
-- Criar um Input em `src/components` para uso de CNPJ com máscara (máscara já implementada em um service que criamos)
-- Aplicar o algoritmo de validação de CNPJ (validação já implementada em um service que criamos) no form de cadastro de empresas
+- Criar um service para tratamento de CNPJ alfanumérico com validação e máscara
+- Criar um Input em `src/components` para uso de CNPJ com máscara reutilizável.
+- Aplicar o algoritmo de validação de CNPJ no form de cadastro de empresas
 - Aplicar máscara em todas as telas em que o CNPJ for exibido
 
-<div style="transform: scale(0.65); transform-origin: top left; width: 800px;">
+<div style="transform: scale(0.65); transform-origin: top left; width: 1200px;">
 
 ```md
 Crie um plano de implementação
 
 Objetivo:
-- Criar um Input reutilizável para uso de CNPJ com máscara.
+- Criar um service para tratamento de CNPJ alfanumérico com 3 funções, uma função de validação CNPJ, uma para adição de máscara e uma para remoção de máscara.
+- Criar um Input reutilizável para uso de CNPJ com máscara que faça uso do service criado.
 - Aplicar a validação de CNPJ no formulário de cadastro de empresas.
+- Remover a máscara do CNPJ antes de salvar no banco de dados.
 - Exibir CNPJ com máscara em todas as telas em que ele aparece.
 
 Contexto importante:
-- A lógica de máscara já existe implementada em um service do projeto.
-- O algoritmo de validação de CNPJ já existe implementado em um service do projeto.
+- A lógica de máscara deve ser implementada no service, o Input deve apenas chamar a função de máscara do service.
+- O algoritmo de validação de CNPJ deve ser implementado no service, o formulário de cadastro de empresas deve apenas chamar a função de validação do service.
 - Input de texto genérico já existe, utilize-o como base para criar o Input de CNPJ.
-- Reaproveite o que já existe; não crie uma segunda implementação paralela.
 
 O plano deve conter:
 1. Mapeamento dos arquivos/pontos de alteração.

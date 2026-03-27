@@ -21,24 +21,24 @@ Instruções de repositório são arquivos versionados que orientam como o agent
 
 </div>
 
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 1 }" class="dynamic-section">
 <v-clicks>
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 1 }" class="dynamic-section">
 
 **Padrões mais usados**
 
 - `AGENTS.md`: formato aberto e agnóstico de ferramenta. [Ver mais](https://agents.md)
 - `.github/copilot-instructions.md`: formato específico do GitHub Copilot. [Ver mais](https://docs.github.com/pt/copilot/how-tos/configure-custom-instructions)
-- `CLAUDE.md`: formato específico do Anthropic Claude. [Ver mais](https://code.claude.com/docs/en/memory)
+- `CLAUDE.md`: formato específico do Claude Code. [Ver mais](https://code.claude.com/docs/en/memory)
 
 
 **Resultado**
 
-Sem instruções, o agente tende a improvisar, **realizando repetitivos escaneamentos** para entender a base de código. Com instruções, ele **segue diretrizes claras**, economizando tempo e entregando resultados mais alinhados.
-
-</div>
+Sem instruções o agente tende a improvisar, **realizando repetitivos escaneamentos** para entender a base de código. Com instruções, ele **segue diretrizes claras**, economizando tempo e entregando resultados mais alinhados.
 
 </v-clicks>
+
+</div>
 
 ---
 
@@ -50,7 +50,7 @@ Sem instruções, o agente tende a improvisar, **realizando repetitivos escaneam
 
 <v-clicks>
 
-- Sem instruções, o agente reinicia do zero a cada tarefa — varrendo arquivos para entender a arquitetura
+- Sem instruções, o agente reinicia do zero a cada tarefa, varrendo arquivos para entender a arquitetura
 - Com instruções, já inicia com o contexto certo: stack, convenções, comandos de build e teste
 
 **Respostas consistentes e previsíveis**
@@ -90,7 +90,7 @@ Sem instruções, o agente tende a improvisar, **realizando repetitivos escaneam
 
 <div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 1 }" class="dynamic-section">
 
-É apenas **Markdown**. Sem campos obrigatórios — use os títulos que fizerem sentido.
+É apenas **Markdown**. Sem campos obrigatórios, use os títulos que fizerem sentido.
 
 - **Visão geral** — domínio do negócio, propósito da aplicação, público-alvo
 - **Stack** — linguagem, frameworks, gerenciador de pacotes
@@ -235,6 +235,8 @@ Coloque um `AGENTS.md` dentro de cada pacote. O agente lê o mais próximo na á
 
 **Vamos usar o agente para criar os arquivos AGENTS.md**
 
+<v-clicks>
+
 1. Abrir o chat no modo `Agent` dentro do projeto e selecionar o modelo `Auto`
 2. Executar o prompt abaixo sem detalhar a estrutura manualmente, deixe o agente descobrir.
 3. Revisar se o resultado bate com pastas reais e padrão do time.
@@ -260,7 +262,6 @@ Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGE
 - Stack principal (linguagens, frameworks, bibliotecas relevantes)
 - Como rodar o projeto localmente
 - Convenções gerais de nomenclatura e organização
-- Skills disponíveis no projeto e quando usá-las: **não documentar no AGENTS.md — o agente descobre skills automaticamente**
 
 ### Diretórios de código-fonte (ex: src/, app/, lib/)
 - Visão geral da estrutura interna de pastas e responsabilidade de cada uma
@@ -277,16 +278,19 @@ Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGE
 - Padrão de layout e estrutura esperada de uma página
 - Como conectar páginas a serviços e estado
 
-### Diretório de serviços/lógica de negócio (ex: services/, usecases/, domain/)
-- Como criar um novo service: estrutura, nomenclatura, responsabilidades
+### Diretório de serviços/lógica e demais recursos (ex: services/, usecases/, domain/)
+- Como criar um novo recurso: estrutura, nomenclatura, responsabilidades
 - Padrões de tratamento de erro e retorno
-- Como os services se conectam à camada de persistência
+- Como os recursos se conectam à outras camadas
 
 ### Outros diretórios relevantes encontrados
 - Analise e documente conforme o contexto (ex: hooks/, store/, utils/, types/, api/)
+- Ignore AGENTS.md em diretórios de dependências, skills de terceiro, etc.
 
 ## Ao finalizar
 Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linha sobre o que cada um cobre.
 ```
 
 </div>
+
+</v-clicks>
