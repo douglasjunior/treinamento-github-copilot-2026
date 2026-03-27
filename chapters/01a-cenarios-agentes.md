@@ -29,6 +29,8 @@
 - Onboarding: guias, exemplos, documentação contextualizada
 - Code review: revisar PRs, sugerir padrões
 
+> 🎁 Copie [este prompt](https://gist.githubusercontent.com/douglasjunior/26d717084811869e593215b8312876e8/raw/86a57d8080bb79543b454c9bb95c1ad036265038/code-review-prompt.md) no seu agente para revisão de PRs.
+
 **Automação & Manutenção**
 - Gerar arquivos de instruções e skills
 - Migração de código: atualizar dependências, padrões

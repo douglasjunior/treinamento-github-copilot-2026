@@ -34,7 +34,7 @@ Workshop prático sobre trabalho avançado com agentes de código
 
 1. **Introdução e nivelamento**
 1. **Skills**
-1. **Instruções de Agents**
+1. **Instruções de Agentes**
 1. **Planos**
 
 ---
