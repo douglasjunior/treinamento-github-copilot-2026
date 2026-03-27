@@ -31,6 +31,19 @@ h2 {
   transform: scale(1.04);
   box-shadow: 0 4px 24px 0 rgba(255, 121, 198, 0.18);
 }
+.dynamic-section {
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.dynamic-hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
 </style>
 
 # Dominando o GitHub Copilot 2026
@@ -49,10 +62,14 @@ src: ./chapters/01-introducao-ask-plan-agent.md
 src: ./chapters/01a-cenarios-agentes.md
 ---
 
-<!-- Slide 4+: Módulo 1 (Skills) -->
-<!-- src: ./chapters/02-modulo-1-skills.md -->
+---
+src: ./chapters/02-modulo-1-skills.md
+---
 
-<!-- Slide 5+: Módulo 3 (Planos) -->
+<!-- Slide 5+: Módulo 2 (Instruções) -->
+<!-- src: ./chapters/03-modulo-2-instrucoes.md -->
+
+<!-- Slide 6+: Módulo 3 (Planos) -->
 <!-- src: ./chapters/04-modulo-3-planos.md -->
 
 <!-- Slide 6+: Referências -->

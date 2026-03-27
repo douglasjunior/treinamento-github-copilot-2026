@@ -1,24 +1,13 @@
 ## Cenários de Aplicação de Agentes
 
-<style>
-.section {
-  transition: opacity 0.3s ease;
-}
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-}
-</style>
-
-<div :class="{ hidden: $slidev.nav.clicks >= 5 }" class="section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 5 }" class="dynamic-section">
 
 <v-clicks>
 
 **Exploração & Análise**
 - Entender a base de código: padrões, tecnologias, convenções
 - Medir esforço de implementação: pontos de impacto (ex: multi-tenant)
-- Validar solução técnica: comparar opções, prós/contras
+- Validar solução técnica: comparar opções, prós/contras e custo-benefício
 
 **Código & Qualidade**
 - Pagar dívida técnica: sonar issues, refatoração, atualização
@@ -30,7 +19,7 @@
 
 </div>
 
-<div :class="{ hidden: $slidev.nav.clicks < 5 }" class="section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 5 }" class="dynamic-section">
 
 <v-clicks>
 
@@ -42,7 +31,7 @@
 **Automação & Manutenção**
 - Gerar arquivos de instruções e skills
 - Migração de código: atualizar dependências, padrões
-- Geração de tipos/interfaces: TypeScript, GraphQL
+- Geração de tipos/interfaces: TypeScript, GraphQL, a partir de exemplos de código e JSON existentes
 - Debugging: investigação colaborativa de bugs
 
 </v-clicks>
