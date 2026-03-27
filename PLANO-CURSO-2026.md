@@ -102,7 +102,7 @@ O participante sai do curso com um setup completo e funcional para uso no dia a 
 **Conteúdo do `AGENTS.md` do projeto prático:**
 
 - [ ] Gerado pela própria IA a partir do código do projeto usando o prompt abaixo (demonstração ao vivo)
-- [ ] Refinado pelos participantes: stack, padrões de código, skills disponíveis, convenções do time
+- [ ] Refinado pelos participantes: stack, padrões de código, convenções do time
 
 **Prompt para geração dos `AGENTS.md`:**
 
@@ -127,7 +127,7 @@ Analise todo o projeto e crie (ou revise e melhore, se já existir) arquivos AGE
 - Stack principal (linguagens, frameworks, bibliotecas relevantes)
 - Como rodar o projeto localmente
 - Convenções gerais de nomenclatura e organização
-- Skills disponíveis no projeto e quando usá-las (se houver arquivo skills.sh ou similar)
+- Skills disponíveis no projeto e quando usá-las: **não documentar no AGENTS.md — o agente descobre skills automaticamente**
 - Mapa dos demais AGENTS.md existentes e o que cada um cobre
 
 ### Diretórios de código-fonte (ex: src/, app/, lib/)

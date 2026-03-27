@@ -1,4 +1,4 @@
-## Cenários de Aplicação de Agentes
+## Cenários de Aplicação de Agentes de código
 
 <div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 5 }" class="dynamic-section">
 

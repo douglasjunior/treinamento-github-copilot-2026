@@ -66,8 +66,9 @@ src: ./chapters/01a-cenarios-agentes.md
 src: ./chapters/02-modulo-1-skills.md
 ---
 
-<!-- Slide 5+: Módulo 2 (Instruções) -->
-<!-- src: ./chapters/03-modulo-2-instrucoes.md -->
+---
+src: ./chapters/03-modulo-2-instrucoes.md
+---
 
 <!-- Slide 6+: Módulo 3 (Planos) -->
 <!-- src: ./chapters/04-modulo-3-planos.md -->

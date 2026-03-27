@@ -1,3 +1,11 @@
+---
+layout: center
+---
+
+# Skills
+
+---
+
 ## O que são Skills?
 
 **Skills** são instruções estruturadas que ensinam ao agente de IA como realizar tarefas específicas e recorrentes no seu projeto.
@@ -262,11 +270,11 @@ Para contatos e interações:
 
 ## Reuso de Skills
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 5 }" class="dynamic-section">
-
-<v-clicks>
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 4 }" class="dynamic-section">
 
 **Skills podem ser tratadas como dependências instaláveis**
+
+<v-clicks>
 
 - Você mantém skills em um repositório central
 - Cada projeto instala apenas as skills necessárias
@@ -282,7 +290,7 @@ Para contatos e interações:
 
 </div>
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 5 }" class="dynamic-section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 4 }" class="dynamic-section">
 
 <v-clicks>
 
