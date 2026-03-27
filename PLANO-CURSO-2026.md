@@ -167,8 +167,8 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
 | 1 | O que são planos no contexto de agentes de IA | 10 min |
 | 2 | Como criar um plano eficaz: especificidade, decomposição, critérios de aceite | 10 min |
 | 3 | Refinamento de plano (rápido) vs. refinamento de código (lento e custoso) | 10 min |
-| 4 | Demonstração: criando e executando um plano para o projeto prático | 15 min |
-| 5 | Exercício: participantes criam e executam seus próprios planos | 15 min |
+| 4 | Demonstração: criando e refinando um plano para o projeto prático | 15 min |
+| 5 | Exercício: participantes criam e refinam seus próprios planos | 15 min |
 
 **Feature a ser implementada via plano:**
 
@@ -209,10 +209,11 @@ Liste todos os arquivos AGENTS.md criados ou modificados e um resumo de uma linh
   - Critério de aceite: módulo completo com roteiro claro de escrita e revisão de instruções.
   - Status: concluído em 2026-03-26. Capítulo `chapters/03-modulo-2-instrucoes.md` finalizado com fluxo completo até a criação dos arquivos `AGENTS.md` (o que são, por que usar, seções, como usar, boas práticas e demo com prompt completo).
 
-6. [ ] **Construir capítulo do Módulo 3 (Planos)**
+6. [x] **Construir capítulo do Módulo 3 (Planos)**
   - Criar slides do módulo focando em criação/refino/execução de planos.
   - Usar como caso principal a feature de validação e máscara de CNPJ.
   - Critério de aceite: módulo completo com fluxo fim a fim do plano até a implementação.
+  - Status: concluído em 2026-03-27. Capítulo `chapters/04-modulo-3-planos.md` criado e importado em `slides.md`, com foco em definição do modo Plan, vantagens, cenário de aplicação e demonstração de criação/refino do plano para a feature de CNPJ (input mascarado em `src/components`, validação no form e exibição mascarada em todas as telas).
 
 7. [ ] **Remover conteúdo que não se encaixa na proposta 2026**
   - Excluir/omitir o slide de intervalo com contador regressivo (`chapters/04-intervalo-contador-regressivo.md`).

@@ -70,9 +70,15 @@ src: ./chapters/02-modulo-1-skills.md
 src: ./chapters/03-modulo-2-instrucoes.md
 ---
 
-<!-- Slide 6+: Módulo 3 (Planos) -->
-<!-- src: ./chapters/04-modulo-3-planos.md -->
+---
+src: ./chapters/04-modulo-3-planos.md
+---
 
 <!-- Slide 6+: Referências -->
 <!-- src: ./chapters/05-referencias.md -->
 
+---
+layout: end
+---
+
+# FIM
