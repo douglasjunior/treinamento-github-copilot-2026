@@ -10,6 +10,8 @@ layout: center
 
 **Skills** são instruções estruturadas que ensinam ao agente de IA como realizar tarefas específicas e recorrentes no seu projeto.
 
+<v-clicks>
+
 - Uma skill é um arquivo com padrões, exemplos e regras
 - O agente consulta a skill quando precisa fazer algo similiar
 - Evita que o agente "reinvente a roda" ou gere código inconsistente
@@ -17,41 +19,30 @@ layout: center
 
 **Exemplo**: ao invés de o agente gerar um service diferente cada vez, ele consulta a skill "Como implementar um service" e segue o padrão.
 
+</v-clicks>
+
 ---
 
 ## Por que Usar Skills?
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 5 }" class="dynamic-section">
+**Padronização**
 
 <v-clicks>
 
-**Padronização**
 - Todo o time escreve services da mesma forma
-- interfaces, tratamento de erro, nomes — tudo consistente
+- Interfaces, tratamento de erro, nomes — tudo consistente
+- Garante que geração de código segue boas práticas
 
 **Reuso**
 - Skills criadas uma vez, usadas em muitos projetos
 - Economiza tempo de escrita e evita duplicação
 
-</v-clicks>
-
-</div>
-
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 5 }" class="dynamic-section">
-
-<v-clicks>
-
 **Golden Path**
 - Estabelece o "caminho certo" para fazer as coisas
 - Menos decisões, mais execução
-
-**Controle de Qualidade**
-- Garante que geração de código segue boas práticas
-- Reduz necessidade de code review detalhado
+- Reduz necessidade de revisão ping pong
 
 </v-clicks>
-
-</div>
 
 ---
 

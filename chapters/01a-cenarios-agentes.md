@@ -1,10 +1,11 @@
 ## Cenários de Aplicação de Agentes de código
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 5 }" class="dynamic-section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks >= 4 }" class="dynamic-section">
+
+**Exploração & Análise**
 
 <v-clicks>
 
-**Exploração & Análise**
 - Entender a base de código: padrões, tecnologias, convenções
 - Medir esforço de implementação: pontos de impacto (ex: multi-tenant)
 - Validar solução técnica: comparar opções, prós/contras e custo-benefício
@@ -19,7 +20,7 @@
 
 </div>
 
-<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 5 }" class="dynamic-section">
+<div :class="{ 'dynamic-hidden': $slidev.nav.clicks < 4 }" class="dynamic-section">
 
 <v-clicks>
 
