@@ -149,7 +149,7 @@ Breve descrição do produto, domínio e público-alvo.
 
 **1. Crie o arquivo na raiz**
 
-A maioria dos agentes consegue scaffoldar um para você — basta pedir.
+A maioria dos agentes consegue criar um para você, basta pedir.
 
 </div>
 
